@@ -3,6 +3,7 @@ function [P,L,D,U]= LDU(A)
     U=A;
     P=eye(dim,dim);
     L=eye(dim,dim);
+    
     for i = 1:(dim-1)
         for j = 1:(dim-i)
             if(U(i,i) == 0)
@@ -24,7 +25,7 @@ function [P,L,D,U]= LDU(A)
     end
     D=U;
     for i = 1:(dim-1)
-            U(i,(1:dim))=U(i,(1:dim))/U(i,i)
+        U(i,(1:dim))=U(i,(1:dim))/U(i,i)
         if(i == (dim-1))
             if(U((i+1),(i+1)) == 0)
                 break;
