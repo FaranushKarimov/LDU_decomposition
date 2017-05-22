@@ -1,4 +1,4 @@
-# LDU_Decomposition
+# LDU Decomposition
 
 This repository contains an [LDU Decomposition Function](https://github.com/siquike/LDU_decomposition/blob/master/LDU.ipynb) implemented in MATLAB.
 
